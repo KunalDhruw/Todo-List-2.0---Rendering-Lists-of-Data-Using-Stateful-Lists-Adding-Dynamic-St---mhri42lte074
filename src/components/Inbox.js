@@ -28,6 +28,9 @@ const Inbox = (props) => {
   console.log(added);
   //console.log(ele);
 
+  const date = new Date();
+  const formattedDate = date.toISOString().substring(0, 10);
+
   return (
     <div>
       <h3>Inbox</h3>
@@ -66,7 +69,7 @@ const Inbox = (props) => {
             <input
               type="date"
               ref={ddate}
-              defaultValue="2022-09-27"
+              defaultValue={formattedDate}
               id="date"
             ></input>
           </div>
