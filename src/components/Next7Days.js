@@ -10,7 +10,7 @@ const Next7Days = (props) => {
     const d=new Date(itm.date);
     console.log(d,"ddddd");
     return(
-        d>=date &&  d < endDate
+        d>=date && d < endDate
     )
   })
   console.log(nseven)
